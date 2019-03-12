@@ -1,0 +1,10 @@
+# IDE
+*.iml
+.idea/
+
+# Build files
+target/
+packaged.yaml
+
+# Java
+dependency-reduced-pom.xml
