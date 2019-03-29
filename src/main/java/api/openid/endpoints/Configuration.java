@@ -11,7 +11,7 @@ public class Configuration implements RequestHandler<Request, Response> {
     // https://openid.net/specs/openid-connect-core-1_0.html#UserInfo
     public Response handleRequest(final Request request, final Context context) {
 
-        String baseUrl = "https://openid.example.org";
+        String baseUrl = request.getOrigin();
         JSONResponse response = new JSONResponse();
         response.getBodyContents().put("issuer", baseUrl);
         response.getBodyContents().put("authorization_endpoint", baseUrl + "/oauth2/authorize");

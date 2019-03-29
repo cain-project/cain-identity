@@ -84,4 +84,9 @@ public class Request extends APIGatewayProxyRequestEvent {
 
         return components[1];
     }
+
+    public String getOrigin()
+    {
+        return "https://" + this.getHeaders().get("Host");
+    }
 }

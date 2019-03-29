@@ -4,9 +4,6 @@ import com.google.gson.Gson;
 
 import java.util.HashMap;
 
-import java.util.HashMap;
-import com.google.gson.Gson;
-
 
 public class JSONResponse extends Response {
 
